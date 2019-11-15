@@ -1,0 +1,16 @@
+extend base
+block main
+    article.s5
+    h2 Login Page
+        form.login
+            .s5div
+                label#email.s5l
+                    | E-Mail
+                input#email.s5i(type='email')
+            .s5div
+                label#password.s5l
+                    | Password
+                input#password.s5i(type='password', placeholder='******')
+            .signup-button
+                button.btnss(href='#' type="submit") LOGIN
+            a(href="/forgetpassword" id="forgotpassword") ForgetPassword?

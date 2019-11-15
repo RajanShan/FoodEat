@@ -1,0 +1,25 @@
+.signup-parent
+    .signup-child
+        .signup-header
+            h3 #{plan.name}
+            .signup-pricing
+                span.pricing $#{plan.price}
+                | /month
+                p #{plan.description}   
+                //That’s only 13.30$ per meal
+        .signup-features
+            ul
+                li
+                    i.fas.fa-check.small-icon  
+                    | 1 meal every day
+                li
+                    i.fas.fa-check.small-icon  
+                    | Rated #{plan.averagerating}
+                li
+                    i.fas.fa-check.small-icon  
+                    | Access to newest creations
+                li
+                    i.fas.fa-check.small-icon  
+                    | Plan duration #{plan.duration} years
+            .signup-button
+                button.btnss(href='#' plan-id=`${plan["_id"]}`) I'm hungry

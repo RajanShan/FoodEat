@@ -1,0 +1,16 @@
+nav
+    ul
+        li 
+            a(href="") Food Delivery
+        li 
+            a(href="") How IT WORKS
+        li 
+            a(href="") OUR CITITES
+        if user
+            li 
+                a(href="/api/user/logout") LOGOUT
+        else
+            li 
+                a(href="/signup") SIGN UP
+            li 
+                a(href="/login") LOGIN

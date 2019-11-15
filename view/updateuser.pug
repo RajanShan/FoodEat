@@ -1,0 +1,15 @@
+extend base
+block main
+    article.s5
+    h2 USER Page
+        form(method="POST" action="/api/user/updateUser")
+            .s5div
+                label#email.s5l
+                    | E-Mail
+                input#email.s5i(type='email' name='email' placeholder=`${user.email}`)
+            .s5div
+                label#name.s5l
+                    | Name
+                input#name.s5i(type='text' name='name' placeholder=`${user.name}`)
+            .signup-button
+                button.btnss(href='/updateuser' type="submit") UPDATE
