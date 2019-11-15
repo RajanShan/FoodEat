@@ -57,7 +57,7 @@ module.exports.getAllPlans = async function (req, res) {
     let allplans = await plans;
 
     // query execution
-    const plans = await planModel.find(query);
+     plans = await planModel.find(query);
     return res.status(200).json({
         sucess: "Params accepted successfully",
         data: plans
