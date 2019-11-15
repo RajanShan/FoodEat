@@ -16,7 +16,7 @@ app.use(hpp());
 //Middleware
 //HTML file aur CSS files0 require kr li humne isme jo hmara foodEat app vali th
 //to serve static files
-app.use(express.static("public/FoodDelivery"));
+app.use(express.static("public"));
 //to express to not to ignore incoming json data from body
 app.use(express.json());
 
